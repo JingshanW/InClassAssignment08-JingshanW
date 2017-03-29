@@ -15,6 +15,9 @@ public class Car
         this.suv = suv;
         this.price = price;
     }
+    public Car(){}
+
+
 
     public String getBrand() {
         return brand;
@@ -38,5 +41,10 @@ public class Car
 
     public void setSuv(boolean suv) {
         this.suv = suv;
+    }
+
+    @Override
+    public String toString() {
+        return brand +" "+price+" "+suv;
     }
 }
